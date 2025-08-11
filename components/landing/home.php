@@ -2,7 +2,7 @@
   <!-- Background Image -->
   <div class="absolute inset-0 z-0">
     <img
-      src="/images/hero-desktop.jpg"
+      src="images/hero-desktop.jpg"
       alt="aaa"
       class="object-cover w-full h-full"
       loading="eager"
