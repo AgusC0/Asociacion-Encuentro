@@ -1,0 +1,1222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+   font-family: 'Raleway', sans-serif;
+   max-width: 100% !important;
+   overflow-x: hidden !important;
+}
+h1{
+	text-align:center;
+  font-family: 'Raleway', sans-serif;
+}
+#nav{
+	background: #0d8548;
+}
+.navbar-nav{
+   margin-left: 900px;
+}
+#carouselExampleIndicators{
+  margin-top: 0%;
+}
+#txt-slider{
+  margin-top:-130px;
+  z-index: 900;
+  font-size: 20px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#logo-slider{
+  margin-top:-500px;
+  z-index: 900;
+}
+#logo-slider2{
+  margin-top:-600px;
+  z-index: 900;
+}
+#titulo-intro{
+   height: 150px;
+   margin-top: 45px;
+   margin-bottom: 45px;
+}
+ 
+#iconos{
+  text-align: center;
+  color: #0d8548;
+}
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+.whatsapp:hover {
+    color:#FFF;
+}
+.whatsapp-icon:hover {
+  color:#FFF;
+}
+#separador{
+    height: 3px;
+    border-top: 3px solid #0d8548;
+    display: inline-block;
+    align:center;
+    top: 1px;
+    width: 5%;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    text-align: center;
+    overflow-x: hidden;
+}
+#separador-landing{
+    height: 3px;
+    border-top: 3px solid #0d8548;
+    display: inline-block;
+    align:center;
+    top: 1px;
+    width: 5%;
+    margin-left: 47.5%;
+    margin-right: 47.5%; 
+    margin-top: 0%;
+    text-align: center;
+    overflow-x: hidden;
+}
+#titulos-landing{
+    background-color: #000;
+}
+.row{
+overflow-x: hidden; overflow-y: hidden;}
+#parallax-home{
+   display: none;
+}
+#parallax-puertosauce{
+   display: none;
+}
+#parallax-cuencas{
+   display: none;
+}
+#parallax-contacto{
+   display: none;
+}
+#parallax-nosotros{
+   display: none;
+}
+#parallax-noticias{
+   display: none;
+}
+#area1{
+   background-image: url("img/lotes/puerto-sauce.jpg");
+	 height: 400px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+}
+#area1b{
+	background: #fff;
+	height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+}
+#separador-area1b{
+    height: 3px;
+    border-top: 3px solid #0d8548;
+    display: inline-block;
+    align:center;
+    top: 1px;
+    width: 10%;
+    margin-left: 0%;
+    margin-right: 80%;
+    margin-bottom: 2%;
+    text-align: center;
+    overflow-x: hidden;
+}
+#area2{
+	background: #fff;
+	height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-right: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: right;
+}
+#separador-area2{
+    height: 3px;
+    border-top: 3px solid #0d8548;
+    display: inline-block;
+    align:center;
+    top: 1px;
+    width: 10%;
+    margin-left: 80%;
+    margin-right: 0%;
+    margin-bottom: 2%;
+    text-align: center;
+    overflow-x: hidden;
+}
+#area2b{
+  background-image: url("img/lotes/cuenca-sol.jpg");
+	height: 400px;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+#area-nosotros-1{
+  background-image: url("img/nosotros/firma-nosotros.jpg");
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+#area-nosotros-1b{
+  background: #f9f9f9;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+}
+#area-nosotros-medio{
+  background: #686868;
+  height: 250px;
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 150px;
+  padding-left: 150px;
+  overflow-x: hidden;
+}
+#area-nosotros-2{
+  background: #f9f9f9;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+}
+#area-nosotros-2b{
+  background-image: url("img/nosotros/familia.jpg");
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+#area-noticias-2{
+  background: #f9f9f9;
+  height: 1100px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+#area-noticias-2b{
+  background: #f9f9f9;
+  height: 1100px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+#contenedor-contacto-home{
+  margin-top: 80px;
+}
+#columna-landing{
+  background: #fff;
+  height: 250px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 110px;
+  padding-right: 110px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#txt-encabezado-landing{
+  background: #fff;
+  height: 200px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#aside-1{
+  background: #f9f9f9;
+  height: 350px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+#aside-2{
+  background-image: url("img/ads/banner1.jpg");
+  background-size: cover;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+
+}
+#aside-3{
+  background-image: url("img/ads/banner2.jpg");
+  background-size: cover;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+#banner-corte{
+ background: #000;
+  height: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  color:#FFF;
+  overflow-x: hidden;
+}
+#btn-lote{
+  background: #0d8548;
+  border-color: #0d8548;
+}
+#area-mapa{
+  height: 640px;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+    overflow-y: hidden;
+}
+#mapa{
+  width: 105%;
+  height: 680px;
+  margin-left: -11px;
+  overflow-x: hidden;
+}
+#area-formulario{
+  background: #fff;
+  height: 680px;
+  font-family: 'Raleway', sans-serif;
+ overflow-x: hidden;
+}
+ 
+#caja-contacto-1{
+  background: #e3dfdf;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#caja-contacto-2{
+  background: #e9e3e3;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#caja-contacto-3{
+  background: #e3dfdf;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#caja-contacto-4{
+  background: #e9e3e3;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#caja-contacto-1 a{
+  color:#000;
+  text-decoration: none;
+}
+#caja-contacto-1 a:hover{
+  color:#fff;
+  text-decoration: none;
+}  
+#caja-contacto-1:hover{
+  background: #0d8548;
+  color:#fff;
+}
+#caja-contacto-2 a{
+  color:#000;
+  text-decoration: none;
+}
+#caja-contacto-2 a:hover{
+  color:#fff;
+  text-decoration: none;
+}   
+#caja-contacto-2:hover{
+  background: #0d8548;
+  color:#fff;
+}  
+#caja-contacto-3 a{
+  color:#000;
+  text-decoration: none;
+}
+#caja-contacto-3 a:hover{
+  color:#fff;
+  text-decoration: none;
+}  
+#caja-contacto-3:hover{
+  background: #0d8548;
+  color:#fff;
+} 
+#caja-contacto-4:hover{
+  background: #0d8548;
+  color:#fff;
+} 
+#logo-puerto-sauce{
+  width: auto;
+  height: auto;
+}
+.section{
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+}
+.animated {
+           
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+         
+@-webkit-keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(-40px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateX(0);
+            }
+}
+         
+@keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(-40px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+}
+         
+.fadeInLeft {
+         -webkit-animation-name: fadeInLeft;
+         animation-name: fadeInLeft;
+} 
+@-webkit-keyframes fadeInRight{
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(40px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateX(0);
+            }
+}
+         
+@keyframes fadeInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(40px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+}
+         
+.fadeInRight {
+         -webkit-animation-name: fadeInRight;
+         animation-name: fadeInRight;
+}
+#btn-lote{
+   margin-top: 20px;
+}
+#footer{
+   color:#fff;
+}
+#footer a{
+   color: #fff;
+   text-decoration: none;
+   font-weight: 700;
+}
+#redes:hover{
+   color: #0d8548;
+   text-decoration: none;
+   font-weight: 700;
+}
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {text-align:center; color: #fff; padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url(img/parallax/parallax-1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+ 
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-contacto .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg-contacto .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg-contacto .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg-contacto .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg-contacto .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg-contacto .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg-contacto .parallax-one-contacto {text-align:center; color: #fff; padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(img/parallax/parallax-2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+ 
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-nosotros  .line-break-nosotros  {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-nosotros  .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg-nosotros  .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg-nosotros  .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg-nosotros .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg-nosotros  .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg-nosotros  .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg-nosotros  .parallax-one-nosotros {text-align:center; color: #fff; padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(img/parallax/parallax-nosotros.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+ 
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-noticias .line-break-noticias {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-noticias  .line-break-noticias  {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-noticias  .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg-noticias  .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg-noticias  .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg-noticias .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg-noticias  .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg-noticias  .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg-noticias  .parallax-one-noticias {text-align:center; color: #fff; padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(img/parallax/parallax-noticias-2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+ 
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-puerto  .line-break-puerto  {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-puerto  .line-break-puerto  {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-puerto   .line-break-puerto   {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-puerto   .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg-puerto   .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg-puerto   .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg-puerto  .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg-puerto   .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg-puerto   .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg-puerto   .parallax-one-puerto  {text-align:center; color: #fff; padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(img/parallax/parallax-1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+ 
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-puerto  .line-break-puerto {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-cuencas   .line-break-cuencas   {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-cuencas   .line-break-cuencas   {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-cuencas    .line-break-cuencas    {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-cuencas    .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg-cuencas    .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg-cuencas    .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg-cuencas   .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg-cuencas    .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg-cuencas    .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg-cuencas    .parallax-one-cuencas   {text-align:center; color: #fff; padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(img/parallax/parallax-cuencas.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+ 
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg-cuencas  .line-break-cuencas {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg-nosotros  .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg-noticias  .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg-puerto  .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg-cuencas  .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg-contacto  .block {padding: 40px; width:620px;}
+  #parallax-world-of-ugg-puerto   .parallax-one-puerto  { display: none;}
+  #parallax-world-of-ugg-cuencas .parallax-one-cuencas { display: none;}
+  #parallax-world-of-ugg-noticias   .parallax-one-noticias  { display: none;}
+  #parallax-world-of-ugg-contacto  .parallax-one-contacto  { display: none;}
+  #parallax-world-of-ugg-nosotros   .parallax-one-nosotros  { display: none;}
+  #parallax-world-of-ugg   .parallax-one  { display: none;}
+  #carouselExampleIndicators{
+  margin-top: 20%;
+}
+ #logo-puerto-sauce{
+  width: 300px;
+  height: auto;
+  margin-top:20%;
+}
+ #area-nosotros-medio{
+  background: #686868;
+  height: 350px;
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+#aside-2{
+  background-image: url("img/ads/banner1.jpg");
+  background-size: cover;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+
+}
+#aside-3{
+  background-image: url("img/ads/banner2.jpg");
+  background-size: cover;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+#txt-encabezado-landing{
+  background: #fff;
+  height: 250px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#parallax-puertosauce{
+   background-image: url("img/parallax/parallax-1.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+}
+#parallax-contacto{
+   background-image: url("img/parallax/parallax-2.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:30%;
+   color:#FFF;
+}
+#parallax-nosotros{
+   background-image: url("img/parallax/parallax-nosotros.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:30%;
+   color:#FFF;
+}
+#parallax-noticias{
+   background-image: url("img/parallax/parallax-noticias-2.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:30%;
+   color:#000;
+}
+#parallax-cuencas{
+   background-image: url("img/parallax/parallax-cuencas.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+}
+#parallax-home{
+   background-image: url("img/parallax/parallax-1.jpg");
+   background-size:cover;
+   height: 250px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:10%;
+   text-align:center;
+   padding-left:3%;
+   padding-right:3%;
+   color:#FFF;
+}
+
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+  #parallax-world-of-ugg-puerto   .parallax-one-puerto  { display: none;}
+  #parallax-world-of-ugg-cuencas .parallax-one-cuencas { display: none;}
+  #parallax-world-of-ugg-noticias   .parallax-one-noticias  { display: none;}
+  #parallax-world-of-ugg-contacto  .parallax-one-contacto  { display: none;}
+  #parallax-world-of-ugg-nosotros   .parallax-one-nosotros  { display: none;}
+  #parallax-world-of-ugg  .parallax-one { display: none;}
+  #carouselExampleIndicators{
+  margin-top: 20%;
+  }
+  #logo-puerto-sauce{
+  width: 300px;
+  height: auto;
+  margin-top:30%;
+ }
+  #area-nosotros-medio{
+  background: #686868;
+  height: 350px;
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+#aside-2{
+  background-image: url("img/ads/banner1.jpg");
+  background-size: cover;
+  height: 500px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+
+
+}
+#aside-3{
+  background-image: url("img/ads/banner2.jpg");
+  background-size: cover;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 200px;
+}
+#txt-slider{
+  margin-top:10px;
+  z-index: 900;
+  font-size: 10px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#logo-slider{
+  margin-top:-100px;
+  margin-left: 160px;
+  z-index: 900;
+  display: inherit;
+  width: 150px;
+  height: 71px;
+}
+#logo-slider2{
+  margin-top:-10px;
+  z-index: 900;
+  width: 100px;
+  height: 32px;
+  display: none;
+}
+#txt-encabezado-landing{
+  background: #fff;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#parallax-puertosauce{
+   background-image: url("img/parallax/parallax-1.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+}
+#parallax-contacto{
+   background-image: url("img/parallax/parallax-2.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:30%;
+   color:#FFF;
+}
+#parallax-nosotros{
+   background-image: url("img/parallax/parallax-nosotros.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:30%;
+   color:#FFF;
+}
+#parallax-noticias{
+   background-image: url("img/parallax/parallax-noticias-2.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:30%;
+   color:#000;
+}
+#parallax-cuencas{
+   background-image: url("img/parallax/parallax-cuencas.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+}
+#parallax-home{
+   background-image: url("img/parallax/parallax-1.jpg");
+   background-size:cover;
+   height: 250px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:10%;
+   text-align:center;
+   padding-left:3%;
+   padding-right:3%;
+   color:#FFF;
+}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px; display:none;}
+  #parallax-world-of-ugg-contacto .block {padding: 30px 15px; width:290px;}
+  #parallax-world-of-ugg-nosotros .block {padding: 30px 15px; width:290px;}
+  #parallax-world-of-ugg-noticias .block {padding: 30px 15px; width:290px;}
+  #parallax-world-of-ugg-cuencas .block {padding: 30px 15px; width:290px;}
+  #parallax-world-of-ugg-puerto .block {padding: 30px 15px; width:290px;}
+  #parallax-world-of-ugg-puerto   .parallax-one-puerto  { display: none;}
+  #parallax-world-of-ugg-cuencas .parallax-one-cuencas { display: none;}
+  #parallax-world-of-ugg-noticias   .parallax-one-noticias  { display: none;}
+  #parallax-world-of-ugg-contacto  .parallax-one-contacto  { display: none;}
+  #parallax-world-of-ugg-nosotros   .parallax-one-nosotros  { display: none;}
+  #parallax-world-of-ugg  .parallax-one  { display: none;}
+  #carouselExampleIndicators{
+  margin-top: 20%;
+}
+#logo-puerto-sauce{
+  width: 300px;
+  height: auto;
+  margin-top:50%;
+ }
+  #area-nosotros-medio{
+  background: #686868;
+  height: 350px;
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+#aside-2{
+  background-image: url("img/ads/banner1.jpg");
+  background-size: cover;
+  height: 500px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+
+}
+#aside-3{
+  background-image: url("img/ads/banner2.jpg");
+  background-size: cover;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+#txt-slider{
+  margin-top:10px;
+  z-index: 900;
+  font-size: 10px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#logo-slider{
+  margin-top:-100px;
+  margin-left: 80px;
+  z-index: 900;
+  display: inherit;
+  width: 100px;
+  height: 47px;
+}
+#logo-slider2{
+  margin-top:-10px;
+  z-index: 900;
+  width: 100px;
+  height: 32px;
+  display: none;
+}
+#txt-encabezado-landing{
+  background: #fff;
+  height: 350px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 30px;
+  overflow-x: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#parallax-puertosauce{
+   background-image: url("img/parallax/parallax-1.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+}
+#parallax-contacto{
+   background-image: url("img/parallax/parallax-2.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:65%;
+   color:#FFF;
+}
+
+#parallax-nosotros{
+   background-image: url("img/parallax/parallax-nosotros.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:65%;
+   color:#FFF;
+}
+#parallax-noticias{
+   background-image: url("img/parallax/parallax-noticias-2.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:65%;
+   color:#000;
+}
+#parallax-cuencas{
+   background-image: url("img/parallax/parallax-cuencas.jpg");
+   background-size:cover;
+   height: 500px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+}
+#parallax-home{
+   background-image: url("img/parallax/parallax-1.jpg");
+   background-size:cover;
+   height: 250px;
+   font-family: 'Raleway', sans-serif;
+   overflow-x: hidden;
+   display: inherit;
+   padding-top:15%;
+   text-align:center;
+   padding-left:3%;
+   padding-right:3%;
+   color:#FFF;
+}
+}
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 10px;
+   /* border: 1px solid #ced4da;*/
+   /* border-radius: 0.25rem;*/
+    max-width: 100%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+.right-bck{background-color: #d3d3d3}
+.registration-right{width: 80%;padding-top: 50px;padding-bottom: 50px}
+.registration-right h2{color: #000;font-weight: 700;padding-bottom: 20px}
+.registration .btn{width: 100%}
+.fa, .fas, .fab{font-family: "Font Awesome 5 Free";font-weight: 900}
+.far{font-family: "Font Awesome 5 Free";font-weight: 400}
+.event-list .card{background-color: #fff;padding: 18px;margin-bottom: 3px}
+.event-list img{width: 177px;height: 177px}
+.event-list h4{color: #000;font-size: 16px}
+.event-list .card-title span{padding-left: 5px;padding-right: 20px;font-size: 12px;font-weight: 700}
+.event-list .card-text{color: #000;font-weight: 700;font-size: 16px}
+.event-list .card-body{padding: 0 20px;margin: 0 0 10px 0}
+.event-list .card-title svg{color: #000}
