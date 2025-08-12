@@ -1,0 +1,181 @@
+/* Variables de colores */
+:root {
+  --color-principal: #0D8548;
+  --color-secundario: #f5a623;
+  --color-terciario: #F4F4F4;
+  --color-negro: #000000;
+  --color-blanco: #FFFFFF;
+  --color-complementario: #0B6E3B;
+}
+
+/* Background y texto */
+.bg-principal { background-color: var(--color-principal) !important; }
+.text-principal { color: var(--color-principal) !important; }
+.border-principal { border-color: var(--color-principal) !important; }
+
+.bg-secundario { background-color: var(--color-secundario) !important; }
+.text-secundario { color: var(--color-secundario) !important; }
+.border-secundario { border-color: var(--color-secundario) !important; }
+
+.bg-terciario { background-color: var(--color-terciario) !important; }
+.text-terciario { color: var(--color-terciario) !important; }
+.border-terciario { border-color: var(--color-terciario) !important; }
+
+.bg-negro { background-color: var(--color-negro) !important; }
+.text-negro { color: var(--color-negro) !important; }
+.border-negro { border-color: var(--color-negro) !important; }  
+
+.bg-blanco { background-color: var(--color-blanco) !important; }
+.text-blanco { color: var(--color-blanco) !important; }
+.border-blanco { border-color: var(--color-blanco) !important; }
+
+.bg-complementario { background-color: var(--color-complementario) !important; }
+.text-complementario { color: var(--color-complementario) !important; }
+.border-complementario { border-color: var(--color-complementario) !important; }
+
+/* Body y base */
+body {
+  background-color: var(--color-terciario) !important;
+  color: var(--color-negro);
+  font-family: 'Raleway', sans-serif; /* o la que uses */
+  margin: 0;
+  padding: 0;
+}
+
+/* Separadores */
+#separador-area-derecha {
+  height: 3px;
+  border-top: 3px solid var(--color-principal);
+  display: inline-block;
+  top: 1px;
+  width: 10%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+#separador-area-izquierda {
+  height: 3px;
+  border-top: 3px solid var(--color-principal);
+  display: inline-block;
+  top: 1px;
+  width: 10%;
+  margin-left: 90%;
+  margin-right: 0;
+  margin-bottom: 2%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Espaciados */
+.separacion {
+  padding-top: 5%;
+}
+
+.espaciado {
+  margin-bottom: 5%;
+}
+
+/* Iframes */
+iframe {
+  height: 800px;
+  width: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 630px; /* más pequeño en móviles */
+  }
+}
+
+/* Dropdown */
+#dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+#dropdownMenu {
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 0;
+  background: var(--color-blanco);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 14rem;
+  padding: 0.5rem 0;
+  display: none;
+  z-index: 9999;
+}
+
+#dropdown:hover #dropdownMenu {
+  display: block;
+}
+
+#dropdownMenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+#dropdownMenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Botones personalizados */
+
+.btn-azul {
+  width: 100%;
+  border-radius: 9999px; /* rounded-full */
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-azul:hover {
+  background-color: #0056b3;
+}
+
+/* Gradientes y fondos usados */
+.bg-gradient-principal {
+  background: linear-gradient(to right, var(--color-principal), #0b7540);
+}
+
+/* Textos destacados */
+.text-destacado {
+  color: var(--color-principal);
+  font-weight: 600;
+}
+
+/* Para cards, sombras, bordes */
+.card-base {
+  background-color: var(--color-blanco);
+  border: 1px solid rgba(151,151,151,0.3);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-base:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* Texto con opacidad como 'text-muted-foreground' */
+.text-muted {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Fuentes específicas si las necesitás */
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}

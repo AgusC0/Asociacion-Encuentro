@@ -43,6 +43,9 @@
     })(window,document,'script','dataLayer','GTM-W5Q3MC4H');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilosOficiales.css" />
+
   </head>
   <body>
     <!-- GOOGLE TAG MANAGER -->
@@ -51,63 +54,14 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
    
-    <style>
-    #separador-area-derecha{
-    height: 3px;
-    border-top: 3px solid #0d8548;
-    display: inline-block;
-    align: center;
-    top: 1px;
-    width: 10%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 2%;
-    text-align: center;
-    overflow-x: hidden;
-    }
-    #separador-area-izquierda{
-    height: 3px;
-    border-top: 3px solid #0d8548;
-    display: inline-block;
-    align: center;
-    top: 1px;
-    width: 10%;
-    margin-left: 90%;
-    margin-right: 0%;
-    margin-bottom: 2%;
-    text-align: center;
-    overflow-x: hidden;
-    }
-        .separacion {
-      padding-top: 5%;
-    }
+
     
-    .espaciado {
-      margin-bottom: 5%;
-    }
-
-    /* Ajuste del alto para los iframes */
-    iframe {
-      height: 800px;
-    }
-
-    /* Ajuste de altura para pantallas móviles */
-    @media (max-width: 768px) {
-      iframe {
-        height: 630px; /* Altura más pequeña en dispositivos móviles */
-      }
-    }
-
-    </style> 
     <!-- header -->
     <?php include 'components/header.php'; ?>
 
     <!-- landing -->
-    <?php include 'components/landing/home.php'; ?>
-    <?php include 'components/landing/details_project.php'; ?>
-    <?php include 'components/landing/benficios.php'; ?>
-    <?php include 'components/landing/contact.php'; ?>
-    <?php include 'components/landing/noticiasMock.php'; ?>
+    <!-- Contenido dinámico -->
+    <?php include 'router.php'; ?>
 
 
     <!-- Botón flotante WhatsApp -->
@@ -172,6 +126,13 @@
     <!-- whatsapp -->
     <script src="js/WPbutton.js" defer></script>
 
+    <!-- dropdown -->
+    <script src="path/to/dropdown.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        initDropdown('dropdown');
+      });
+    </script>
 
   </body>
 </html>

@@ -13,7 +13,7 @@
     <!-- Estadísticas (se rellenan por JS) -->
     <div id="statsContainer" class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16"></div>
 
-    <!-- Barra de progreso -->
+    <!-- Barra de progreso 
     <div class="bg-white rounded-lg shadow-md mb-16 p-8">
       <div class="flex justify-between items-center mb-4">
         <h3 class="text-xl font-bold text-gray-900">Avance de Obra</h3>
@@ -25,6 +25,6 @@
       <p class="text-gray-600">
         El proyecto se encuentra en avanzado estado de construcción. Servicios subterráneos completados y calles en proceso de pavimentación.
       </p>
-    </div>
+    </div>-->
 </section>
 

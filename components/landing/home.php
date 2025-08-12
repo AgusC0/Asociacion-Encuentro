@@ -21,7 +21,7 @@
         <span class="text-white text-2xl font-bold">Asociacion Encuentro</span>
       </div>
 
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-left">
         Tu nuevo hogar te está esperando
       </h1>
 

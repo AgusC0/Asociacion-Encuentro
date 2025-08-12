@@ -8,7 +8,7 @@ $noticias = [
     "categoria" => "Sostenibilidad",
     "autor" => "Equipo Encuentro Comunitario",
     "fecha" => "15 Mar 2024",
-    "imagen" => "/images/sustainable-urban-green-buildings.png",
+    "imagen" => "images/sustainable-urban-green-buildings.png",
     "link" => "/noticia.php?id=1"
   ],
   [
@@ -18,7 +18,7 @@ $noticias = [
     "categoria" => "Inversión",
     "autor" => "María González",
     "fecha" => "10 Mar 2024",
-    "imagen" => "/images/real-estate-land-guide.png",
+    "imagen" => "images/real-estate-land-guide.png",
     "link" => "/noticia.php?id=2"
   ],
   [
@@ -28,7 +28,7 @@ $noticias = [
     "categoria" => "Lifestyle",
     "autor" => "Carlos Ruiz",
     "fecha" => "5 Mar 2024",
-    "imagen" => "/images/planned-community-lifestyle.png",
+    "imagen" => "images/planned-community-lifestyle.png",
     "link" => "/noticia.php?id=3"
   ],
 ];
