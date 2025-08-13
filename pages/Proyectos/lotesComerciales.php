@@ -67,27 +67,20 @@ $caracteristicas = [
   <!-- Background -->
   <div class="absolute inset-0 z-0">
     <img
-      src="/placeholder.svg"
+      src="img/comerciales/asociacion-encuentro-comunitario-slider-lotes-comerciales.jpg"
       alt="Fondo Proyectos"
       class="object-cover w-full h-full"
       style="position: absolute; inset: 0;"
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
   </div>
 
   <!-- Content -->
   <div class="relative z-10 container mx-auto px-4">
     <div class="max-w-3xl">
       <div class="flex items-center space-x-4 mb-6">
-        <!-- Logo -->
-        <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-blue-600 rounded-xl flex items-center justify-center">
-          <img src="img/logo.svg" alt="Logo Encuentro Comunitario" class="w-10 h-10" />
-          <!-- Si no tenés logo svg, podés usar letra:
-          <span class="text-white font-bold text-2xl">E</span> -->
-        </div>
-
         <div>
-          <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight text-left">
             Invertí en el desarrollo de la región
           </h1>
           <p class="text-white/80 mt-2 text-lg">Te ofrecemos lotes comerciales con ubicación privilegiada</p>
@@ -148,11 +141,10 @@ $caracteristicas = [
   </div>
 </section>
 
-<!-- Video -->
-<section class="container mx-auto max-w-4xl px-4 py-16">
-  <div class="aspect-w-16 aspect-h-9">
+<section class="container mx-auto px-4 py-16">
+  <div class="w-full max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden" style="height: 700px;">
     <iframe
-      class="w-full h-full rounded-lg shadow-lg"
+      class="w-full h-full"
       src="https://www.youtube.com/embed/u_vlN3OYk24"
       frameborder="0"
       allowfullscreen

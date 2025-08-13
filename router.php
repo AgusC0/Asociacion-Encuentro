@@ -7,6 +7,8 @@ $path = trim(parse_url($request, PHP_URL_PATH), '/');
 
 // Dividir la ruta en partes
 $parts = explode('/', $path);
+    
+
 
 // Si la ruta está vacía o es la raíz del proyecto → home
 if ($path === '' || $path === 'index.php' || $path === 'Asociacion-Encuentro' || $path === 'Asociacion-Encuentro/index.php') {
@@ -26,15 +28,26 @@ if ($parts[0] === 'Asociacion-Encuentro') {
 }
 
 switch ($route) {
-    case 'proyectos':
-        if (isset($parts[2]) && is_numeric($parts[2])) {
-            $proyectoId = (int) $parts[2];
-            include 'pages/proyectos.php';
-        } else {
-            include 'pages/Proyectos/lotesComerciales.php';
-        }
+    case "Lotes-comerciales":
+        include "pages/Proyectos/lotesComerciales.php";
         break;
 
+    case "Puerto-Sauce":
+        include "pages/Proyectos/Barrios/puertoSauce.php";
+        break;
+
+    case "Cuenca-del-Sol":
+        include "pages/Proyectos/Barrios/cuencaDelSol.php";
+        break;
+
+    case "Padre-Mugica":
+        include "pages/Proyectos/Barrios/padreMugica.php";
+        break;
+
+    case "Los-Ceibos":
+        include "pages/Proyectos/Barrios/losCeibos.php";
+        break;
+    
     case 'sobre-nosotros':
         include "pages/AboutUs/heroAboutUs.php";
         include "pages/AboutUs/historiaAboutUs.php";
@@ -42,6 +55,9 @@ switch ($route) {
         include "pages/AboutUs/trayectoriaAboutUs.php";
         break;
 
+    case 'noticias':
+        include "pages/Noticias/noticias.php";
+        break;
     default:
         include 'pages/404.php';
         break;

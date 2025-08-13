@@ -55,56 +55,57 @@
     </div>
 
     <!-- Proyectos -->
-    <div class="mt-16 max-w-4xl mx-auto">
+    <div class="mt-16 max-w-6xl mx-auto">
       <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Proyectos Destacados</h3>
-      <?php
-      $projects = [
-        [
-          "name" => "Cuenca del Sol",
-          "description" => "Lotes de 300 m² con cableado subterráneo y espacios verdes, ubicados próximamente en zona Hotel Amerian sobre Ruta 158 en Villa María.",
-          "details" => [
-            "Lotes desde 300 m²",
-            "Lotes comerciales disponibles",
-            "Ubicación estratégica con rápido acceso al centro y zona en crecimiento"
+      <div class="flex flex-wrap gap-6  justify-center">
+        <?php
+        $projects = [
+          [
+            "name" => "Cuenca del Sol",
+            "description" => "Lotes de 300 m² con cableado subterráneo y espacios verdes, ubicados próximamente en zona Hotel Amerian sobre Ruta 158 en Villa María.",
+            "details" => [
+              "Lotes desde 300 m²",
+              "Lotes comerciales disponibles",
+              "Ubicación estratégica con rápido acceso al centro y zona en crecimiento"
+            ],
+            "financing" => "Entrega mínima del 30%, financiación en hasta 30 cuotas ajustadas por índices oficiales."
           ],
-          "financing" => "Entrega mínima del 30%, financiación en hasta 30 cuotas ajustadas por índices oficiales."
-        ],
-        [
-          "name" => "Los Ceibos",
-          "description" => "Proyecto residencial con lotes desde 200 m² y 300 m², servicios completos y colaboración con el IMVI y CGT para facilitar el acceso a la tierra propia.",
-          "details" => [
-            "Más de 650 lotes",
-            "Ubicación sobre calle Buenos Aires, zona con crecimiento comercial y residencial",
-            "Acceso cercano a autopista Córdoba-Rosario"
+          [
+            "name" => "Los Ceibos",
+            "description" => "Proyecto residencial con lotes desde 200 m² y 300 m², servicios completos y colaboración con el IMVI y CGT para facilitar el acceso a la tierra propia.",
+            "details" => [
+              "Más de 650 lotes",
+              "Ubicación sobre calle Buenos Aires, zona con crecimiento comercial y residencial",
+              "Acceso cercano a autopista Córdoba-Rosario"
+            ],
+            "financing" => "Entrega mínima del 15%, cuotas hasta 30 pagos con ajuste por índices oficiales."
           ],
-          "financing" => "Entrega mínima del 15%, cuotas hasta 30 pagos con ajuste por índices oficiales."
-        ],
-        [
-          "name" => "Puerto Sauce",
-          "description" => "Nuevo desarrollo en Villa Nueva con lotes desde 250 m² y bajada al Río Ctalamochita, ubicado sobre Ruta Provincial 2.",
-          "details" => [
-            "Ubicado a metros de la nueva circunvalación y RN 158",
-            "Acceso fácil a Villa María y Villa Nueva",
-            "Zona con gran potencial de crecimiento"
+          [
+            "name" => "Puerto Sauce",
+            "description" => "Nuevo desarrollo en Villa Nueva con lotes desde 250 m² y bajada al Río Ctalamochita, ubicado sobre Ruta Provincial 2.",
+            "details" => [
+              "Ubicado a metros de la nueva circunvalación y RN 158",
+              "Acceso fácil a Villa María y Villa Nueva",
+              "Zona con gran potencial de crecimiento"
+            ],
+            "financing" => "Entrega mínima del 25%, cuotas hasta 30 pagos con actualización basada en índices oficiales."
           ],
-          "financing" => "Entrega mínima del 25%, cuotas hasta 30 pagos con actualización basada en índices oficiales."
-        ],
-      ];
-
-      foreach ($projects as $proj) : ?>
-        <div class="mb-8 border rounded-lg shadow-lg p-6 px-4 hover:shadow-xl transition-shadow">
-          <h4 class="text-2xl font-bold text-green-700 mb-4"><?= htmlspecialchars($proj["name"]) ?></h4>
-          <p class="mb-4 text-gray-700"><?= htmlspecialchars($proj["description"]) ?></p>
-          <?php if (!empty($proj["details"])) : ?>
-            <ul class="list-disc list-inside mb-4 text-gray-600">
-              <?php foreach ($proj["details"] as $detail) : ?>
-                <li><?= htmlspecialchars($detail) ?></li>
-              <?php endforeach; ?>
-            </ul>
-          <?php endif; ?>
-          <p class="italic text-gray-600"><strong>Financiación:</strong> <?= htmlspecialchars($proj["financing"]) ?></p>
-        </div>
-      <?php endforeach; ?>
+        ];
+        foreach ($projects as $proj) : ?>
+          <div class="flex flex-col border rounded-lg shadow-lg p-6 px-4 hover:shadow-xl transition-shadow basis-[30%] min-w-[300px]">
+            <h4 class="text-2xl font-bold text-green-700 mb-4"><?= htmlspecialchars($proj["name"]) ?></h4>
+            <p class="mb-4 text-gray-700"><?= htmlspecialchars($proj["description"]) ?></p>
+            <?php if (!empty($proj["details"])) : ?>
+              <ul class="list-disc list-inside mb-4 text-gray-600">
+                <?php foreach ($proj["details"] as $detail) : ?>
+                  <li><?= htmlspecialchars($detail) ?></li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+            <p class="italic text-gray-600"><strong>Financiación:</strong> <?= htmlspecialchars($proj["financing"]) ?></p>
+          </div>
+        <?php endforeach; ?>
+      </div>
     </div>
   </div>
 </section>

@@ -13,13 +13,13 @@
       $stats = [
         [
           "icon" => "trending-up",
-          "number" => "15+",
+          "number" => "10+",
           "label" => "Años de experiencia",
           "description" => "Construyendo confianza desde 2008",
         ],
         [
           "icon" => "home",
-          "number" => "8",
+          "number" => "1",
           "label" => "Proyectos completados",
           "description" => "Desarrollos exitosos entregados",
         ],

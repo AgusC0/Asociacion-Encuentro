@@ -87,7 +87,7 @@ $noticias = [
 
     <!-- Botón para ver todas las noticias -->
     <div class="text-center">
-      <a href="/noticias" class="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition">
+      <a a href="/Asociacion-Encuentro/noticias" class="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition">
         Ver todas las noticias
       </a>
     </div>

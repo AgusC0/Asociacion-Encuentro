@@ -18,8 +18,8 @@
 .border-secundario { border-color: var(--color-secundario) !important; }
 
 .bg-terciario { background-color: var(--color-terciario) !important; }
-.text-terciario { color: var(--color-terciario) !important; }
 .border-terciario { border-color: var(--color-terciario) !important; }
+.background-terciario { background-color: var(--color-terciario) !important; }
 
 .bg-negro { background-color: var(--color-negro) !important; }
 .text-negro { color: var(--color-negro) !important; }

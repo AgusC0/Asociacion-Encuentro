@@ -15,9 +15,6 @@
   <div class="relative z-10 container mx-auto px-4">
     <div class="max-w-3xl">
       <div class="flex items-center space-x-2 mb-6">
-        <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-blue-600 rounded-lg flex items-center justify-center">
-          <span class="text-white font-bold text-lg">N</span>
-        </div>
         <span class="text-white text-2xl font-bold">Asociacion Encuentro</span>
       </div>
 
@@ -31,20 +28,19 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 mb-12">
-        <button
-          class="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded inline-flex items-center"
-        >
+        <a href="/Asociacion-Encuentro/Lotes-comerciales" 
+          class="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded inline-flex items-center">
           Explorar Lotes
           <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
-        </button>
+        </a>
 
-        <button
+        <a href="#contacto"
           class="border border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4 rounded bg-transparent"
         >
           Ver Ubicación
-        </button>
+        </a>
       </div>
 
       <!-- Features -->

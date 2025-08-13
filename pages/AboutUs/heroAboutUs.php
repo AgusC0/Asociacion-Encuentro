@@ -14,9 +14,6 @@
   <div class="relative z-10 container mx-auto px-4">
     <div class="max-w-4xl">
       <div class="flex items-center space-x-3 mb-6">
-        <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-blue-600 rounded-xl flex items-center justify-center">
-          <span class="text-white font-bold text-2xl">A</span>
-        </div>
         <div>
           <h1 class="text-3xl md:text-5xl font-bold text-white">Sobre Asociacion Encuentro</h1>
           <p class="text-white/80 text-lg">Construyendo el futuro de Villa María</p>
@@ -39,7 +36,7 @@
             </svg>
           </div>
           <div>
-            <p class="font-bold text-lg">15+ Años</p>
+            <p class="font-bold text-lg">10+ Años</p>
             <p class="text-white/80">de experiencia</p>
           </div>
         </div>
