@@ -1,4 +1,4 @@
-<section class="relative min-h-[80vh] flex items-center">
+<section class="relative min-h-[91vh] flex items-center">
   <!-- Background -->
   <div class="absolute inset-0 z-0">
     <img
@@ -7,7 +7,7 @@
       class="object-cover w-full h-full"
       style="position: absolute; inset: 0;"
     />
-    <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-black/10"></div>
   </div>
 
   <!-- Content -->

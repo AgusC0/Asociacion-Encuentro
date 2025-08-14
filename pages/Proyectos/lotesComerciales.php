@@ -63,7 +63,7 @@ $caracteristicas = [
 ?>
 
 <!-- Hero -->
-<section class="relative min-h-[80vh] flex items-center bg-gray-900">
+<section class="relative min-h-[91vh] flex items-center bg-gray-900">
   <!-- Background -->
   <div class="absolute inset-0 z-0">
     <img
@@ -72,7 +72,7 @@ $caracteristicas = [
       class="object-cover w-full h-full"
       style="position: absolute; inset: 0;"
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/20  to-transparent"></div>
   </div>
 
   <!-- Content -->

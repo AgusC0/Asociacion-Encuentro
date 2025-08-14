@@ -2,18 +2,13 @@
 // Datos del barrio único
 $data = [
     "hero" => [
-        "image" => "/img/barrio-padre-mugica.jpg",
-        "title" => "Barrio Padre Mugica",
+        "image" => "img/parallax/parallax-cuencas.jpg",
+        "title" => "Barrio",
         "subtitle" => "Nuestro primer proyecto comunitario"
     ],
     "description" => [
         "title" => "Nuestro primer proyecto",
         "text" => "Como consecuencia de la experiencia con el Programa de Acceso al Suelo Urbano (PASU por sus iniciales), decidimos redoblar la apuesta y desarrollar nuestro propio loteo, junto a un gran grupo de socios que acompañó la propuesta.",
-        "images" => [
-            "/img/barrio-1.jpg",
-            "/img/barrio-2.jpg",
-            "/img/barrio-3.jpg"
-        ]
     ],
     "features" => [
         [
@@ -40,20 +35,26 @@ $data = [
         ]
     ],
     "timeline" => [
-        [
-            "title" => "Planificación",
-            "desc" => "Definimos el proyecto y los objetivos.",
-            "done" => true
-        ],
-        [
-            "title" => "Obras",
-            "desc" => "Apertura de calles y tendido de servicios.",
-            "done" => true
-        ],
-        [
-            "title" => "Escrituración",
-            "desc" => "Entrega formal de los lotes a cada familia.",
-            "done" => false
+        "bgColor" => "bg-white/10 text-black",
+        "steps" => [
+            [
+                "title" => "Compra de tierra",
+                "desc" => "Primera etapa: adquisición comunitaria del terreno.",
+                "status" => "Completado",
+                "done" => true
+            ],
+            [
+                "title" => "Obras de urbanización",
+                "desc" => "Segunda etapa: apertura de calles, tendido eléctrico subterráneo y obras nexo.",
+                "status" => "Completado",
+                "done" => true
+            ],
+            [
+                "title" => "Escritura individual",
+                "desc" => "Entrega formal de lotes a cada comprador.",
+                "status" => "Próximo a finalizar",
+                "done" => false
+            ]
         ]
     ],
     "financing" => [
@@ -67,31 +68,30 @@ $data = [
 ];
 ?>
 
-<section id="padre-mugica" class="relative min-h-screen flex flex-col text-white">
-    <!-- Imagen de fondo del Hero -->
-    <div class="absolute inset-0 z-0">
-        <img src="<?= $data['hero']['image'] ?>" alt="<?= $data['hero']['title'] ?>" class="object-cover w-full h-full">
-        <div class="absolute inset-0 bg-black/60"></div>
-    </div>
+<section id="padre-mugica" class="relative flex flex-col text-black bg-[#f4f4f4]">
 
-    <!-- Contenido -->
-    <div class="relative z-10 container mx-auto px-4 py-16 space-y-16">
-
-        <!-- Hero -->
-        <div class="text-center space-y-4">
-            <h1 class="text-4xl md:text-6xl font-bold"><?= $data['hero']['title'] ?></h1>
-            <p class="max-w-3xl mx-auto text-lg md:text-xl"><?= $data['hero']['subtitle'] ?></p>
+    <!-- Hero -->
+    <div class="relative w-full h-[60vh] md:h-[91vh] flex items-center justify-center text-white text-center bg-white">
+        <!-- Fondo Hero -->
+        <div class="absolute inset-0 z-0">
+            <img src="<?= $data['hero']['image'] ?>" alt="<?= $data['hero']['title'] ?>" class="object-cover w-full h-full ">
         </div>
 
+        <!-- Contenido Hero -->
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-bold"><?= $data['hero']['title'] ?></h1>
+            <img src="img/logos/padre-mugica_logo.png" alt="Logo Los Ceibos" class="w-80 md:w-120 mb-6 text-center mx-auto">
+            <p class="max-w-3xl mx-auto text-lg md:text-xl"><?= $data['hero']['subtitle'] ?></p>
+        </div>
+    </div>
+
+    <!-- Contenido restante -->
+    <div class="relative z-10 container mx-auto px-4 py-16 space-y-16">
+
         <!-- Descripción -->
-        <div class="bg-white/10 rounded-lg p-6 shadow-lg max-w-4xl mx-auto text-center">
+        <div class="rounded-lg p-6 shadow-lg max-w-4xl mx-auto text-center bg-white">
             <h2 class="text-3xl font-bold mb-4"><?= $data['description']['title'] ?></h2>
             <p class="leading-relaxed"><?= $data['description']['text'] ?></p>
-            <div class="grid md:grid-cols-3 gap-4 mt-6">
-                <?php foreach ($data['description']['images'] as $img): ?>
-                    <img src="<?= $img ?>" class="w-full rounded-lg shadow-md" alt="">
-                <?php endforeach; ?>
-            </div>
         </div>
 
         <!-- Características -->
@@ -99,7 +99,7 @@ $data = [
             <h2 class="text-3xl font-bold text-center mb-6">Características clave</h2>
             <div class="grid md:grid-cols-3 gap-6">
                 <?php foreach ($data['features'] as $feature): ?>
-                    <div class="bg-white/10 p-6 rounded-lg shadow-md text-center">
+                    <div class="p-6 rounded-lg shadow-md text-center bg-white">
                         <div class="text-4xl mb-2"><?= $feature['icon'] ?></div>
                         <h3 class="text-xl font-semibold mb-2"><?= $feature['title'] ?></h3>
                         <p><?= $feature['desc'] ?></p>
@@ -108,27 +108,28 @@ $data = [
             </div>
         </div>
 
-        <!-- Ubicación -->
-        <div>
-            <h2 class="text-3xl font-bold text-center mb-4">Ubicación</h2>
-            <iframe src="" width="100%" height="300" allowfullscreen loading="lazy" class="rounded-lg shadow-md mb-4"></iframe>
-            <ul class="list-disc list-inside max-w-lg mx-auto">
-                <?php foreach ($data['location']['advantages'] as $adv): ?>
-                    <li><?= $adv ?></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-
         <!-- Línea de tiempo -->
         <div>
             <h2 class="text-3xl font-bold text-center mb-8">Progreso del proyecto</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <?php foreach ($data['timeline'] as $step): ?>
-                    <div class="p-6 bg-white/10 rounded-lg shadow text-center <?= $step['done'] ? 'border-l-4 border-green-500' : '' ?>">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <?php foreach ($data['timeline']['steps'] as $step): ?>
+                    <?php
+                        if($step['status'] === 'Completado') {
+                            $borderColor = 'border-green-500';
+                            $badgeBg = 'bg-green-500 text-white';
+                        } elseif($step['status'] === 'Próximo a finalizar') {
+                            $borderColor = 'border-green-300';
+                            $badgeBg = 'bg-green-300 text-black';
+                        } else {
+                            $borderColor = 'border-gray-300';
+                            $badgeBg = 'bg-gray-300 text-black';
+                        }
+                    ?>
+                    <div class="p-6 rounded-lg shadow text-center border-l-4 <?= $borderColor ?> bg-white">
                         <h3 class="font-bold"><?= $step['title'] ?></h3>
                         <p class="text-sm mb-2"><?= $step['desc'] ?></p>
-                        <span class="inline-block px-3 py-1 text-sm rounded-full <?= $step['done'] ? 'bg-green-500 text-white' : 'bg-gray-300 text-black' ?>">
-                            <?= $step['done'] ? 'Completado' : 'Pendiente' ?>
+                        <span class="inline-block px-3 py-1 text-sm rounded-full <?= $badgeBg ?>">
+                            <?= $step['status'] ?>
                         </span>
                     </div>
                 <?php endforeach; ?>

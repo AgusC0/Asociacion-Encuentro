@@ -14,10 +14,10 @@ $data = [
             "img/ceibos-2.jpg",
             "img/ceibos-3.jpg"
         ],
-        "bgColor" => "bg-gray-900/80"
+        "bgColor" => "bg-white"
     ],
     "features" => [
-        "bgColor" => "bg-white/10 text-black",
+        "bgColor" => " text-black",
         "items" => [
             [
                 "icon" => "📍",
@@ -37,7 +37,7 @@ $data = [
         ]
     ],
     "location" => [
-        "bgColor" => "bg-gray-800/80",
+        "bgColor" => "bg-white text-black",
         "text" => "Este nuevo proyecto se encuentra ubicado en las inmediaciones del acceso a Villa María sobre Calle Buenos Aires, zona en gran crecimiento residencial y comercial. Se facilita el acceso al centro y cuenta con comercios esenciales a pocos minutos.",
         "advantages" => [
             "Zona con gran potencial de crecimiento y expansión",
@@ -77,20 +77,26 @@ $data = [
 ];
 ?>
 
-<!-- Hero con video -->
+<!-- Hero con imagen y logo -->
 <section id="los-ceibos-hero" class="relative min-h-screen flex items-center justify-center text-white">
-    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
-        <source src="<?= $data['hero']['video'] ?>" type="video/mp4">
-    </video>
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="relative text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-bold"><?= $data['hero']['title'] ?></h1>
-        <p class="text-lg md:text-xl mt-2"><?= $data['hero']['subtitle'] ?></p>
+    <!-- Imagen de fondo -->
+    <img src="img/slide/losCeibos.jpeg" alt="Fondo Los Ceibos" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Overlay ligero para legibilidad -->
+    <div class="absolute inset-0 bg-black/20"></div>
+
+    <div class="relative text-center px-4 flex flex-col items-center">
+        <!-- Logo PNG centrado -->
+        <img src="img/logos/logo-los_ceibos.png" alt="Logo Los Ceibos" class="w-80 md:w-120 mb-6">
+
+        <!-- Títulos -->
+        <h1 class="text-4xl md:text-6xl font-bold drop-shadow-md"><?= $data['hero']['title'] ?></h1>
+        <p class="text-lg md:text-xl mt-2 drop-shadow-md"><?= $data['hero']['subtitle'] ?></p>
     </div>
 </section>
 
 <!-- Descripción con fondo sólido -->
-<section id="los-ceibos-description" class="relative <?= $data['description']['bgColor'] ?> text-white py-16">
+<section id="los-ceibos-description" class="relative <?= $data['description']['bgColor'] ?> text-black py-16">
     <div class="container mx-auto px-4 text-center max-w-4xl">
         <h2 class="text-3xl font-bold mb-4"><?= $data['description']['title'] ?></h2>
         <p class="leading-relaxed mb-6"><?= $data['description']['text'] ?></p>
@@ -103,7 +109,7 @@ $data = [
 </section>
 
 <!-- Características -->
-<section id="los-ceibos-features" class="relative <?= $data['features']['bgColor'] ?> py-16">
+<section id="los-ceibos-features" class="relative <?= $data['features']['bgColor'] ?> py-16 text-black">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-6">Características clave</h2>
         <div class="grid md:grid-cols-3 gap-6">
@@ -119,7 +125,7 @@ $data = [
 </section>
 
 <!-- Ubicación compacta -->
-<section id="los-ceibos-location" class="relative <?= $data['location']['bgColor'] ?> py-12 text-white">
+<section id="los-ceibos-location" class="relative <?= $data['location']['bgColor'] ?> py-12 text-black">
     <div class="container mx-auto px-4 max-w-3xl text-center">
         <h2 class="text-3xl font-bold mb-4">Ubicación</h2>
         <p class="mb-4"><?= $data['location']['text'] ?></p>
@@ -132,7 +138,7 @@ $data = [
 </section>
 
 <!-- Línea de tiempo -->
-<section id="los-ceibos-timeline" class="relative <?= $data['timeline']['bgColor'] ?> py-16">
+<section id="los-ceibos-timeline" class="relative <?= $data['timeline']['bgColor'] ?> py-16 text-black">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8">Etapas del proyecto</h2>
         <div class="grid md:grid-cols-3 gap-6">
@@ -150,7 +156,7 @@ $data = [
 </section>
 
 <!-- Financiamiento -->
-<section id="los-ceibos-financing" class="relative <?= $data['financing']['bgColor'] ?> py-16 text-center">
+<section id="los-ceibos-financing" class="relative <?= $data['financing']['bgColor'] ?> py-16 text-center text-black">
     <div class="container mx-auto px-4 max-w-lg">
         <h2 class="text-3xl font-bold mb-6"><?= $data['financing']['headline'] ?></h2>
         <ul class="list-disc list-inside">

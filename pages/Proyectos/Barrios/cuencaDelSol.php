@@ -36,15 +36,24 @@ $data = [
         ]
     ],
     "timeline" => [
+        "bgColor" => "bg-white/10 text-black",
         "steps" => [
             [
-                "title" => "Adquisición de la tierra",
-                "desc" => "Primera etapa: compra comunitaria de la tierra.",
+                "title" => "Compra de tierra",
+                "desc" => "Primera etapa: adquisición comunitaria del terreno.",
+                "status" => "Completado",
                 "done" => true
             ],
             [
-                "title" => "Obras e infraestructura",
-                "desc" => "Segunda etapa: apertura y consolidado de calles, cableado eléctrico subterráneo, obras nexo.",
+                "title" => "Obras de urbanización",
+                "desc" => "Segunda etapa: apertura de calles, tendido eléctrico subterráneo y obras nexo.",
+                "status" => "En curso",
+                "done" => true
+            ],
+            [
+                "title" => "Escritura individual",
+                "desc" => "Entrega formal de lotes a cada comprador.",
+                "status" => "Pendiente",
                 "done" => false
             ]
         ]
@@ -62,7 +71,7 @@ $data = [
 ?>
 
 <!-- Hero con imagen -->
-<section id="cuenca-del-sol-hero" class="relative min-h-screen flex items-center justify-center text-white">
+<section id="cuenca-del-sol-hero" class="relative min-h-screen flex items-center justify-center text-white bg-white">
     <img src="img/slide/2.jpg" alt="Cuenca del Sol" class="absolute inset-0 w-full h-full object-cover">
     <div class="absolute inset-0 bg-black/10"></div>
     <div class="relative text-center px-4">
@@ -72,13 +81,13 @@ $data = [
 </section>
 
 <!-- Descripción -->
-<section id="cuenca-del-sol-description" class="relative bg-gray-900/80 text-white py-16">
+<section id="cuenca-del-sol-description" class="relative bg-f4f4f4 py-16 text-black">
     <div class="container mx-auto px-4 text-center max-w-4xl">
         <h2 class="text-3xl font-bold mb-4"><?= $data['description']['title'] ?></h2>
         <p class="leading-relaxed mb-6"><?= $data['description']['text'] ?></p>
         <div class="grid md:grid-cols-3 gap-6">
             <?php foreach ($data['description']['features'] as $feature): ?>
-                <div class="p-6 rounded-lg shadow-md text-center bg-white/10">
+                <div class="p-6 rounded-lg shadow-md text-center bg-white">
                     <div class="text-4xl mb-2"><?= $feature['icon'] ?></div>
                     <h3 class="text-xl font-semibold mb-2"><?= $feature['title'] ?></h3>
                     <p><?= $feature['desc'] ?></p>
@@ -86,21 +95,19 @@ $data = [
             <?php endforeach; ?>
         </div>
         <div class="mt-6">
-            <video controls   class="w-full rounded-lg shadow-lg">
-                <source src="<?= $data['hero']['video'] ?>" type="video/mp4">
-            </video>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/zo8_ig227n8" title="YouTube video" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </section>
 
 <!-- Ubicación -->
-<section id="cuenca-del-sol-location" class="relative bg-gray-800/80 py-12 text-white">
+<section id="cuenca-del-sol-location" class="relative bg-white py-12 text-black">
     <div class="container mx-auto px-4 max-w-3xl text-center">
         <h2 class="text-3xl font-bold mb-4">UBICACIÓN</h2>
         <p class="mb-6"><?= $data['location']['text'] ?></p>
         <div class="grid md:grid-cols-3 gap-6 text-left">
             <?php foreach ($data['location']['advantages'] as $adv): ?>
-                <div class="p-4 bg-white/10 rounded-lg shadow-md">
+                <div class="p-4 bg-f4f4f4 rounded-lg shadow-md">
                     <p>✅ <?= $adv ?></p>
                 </div>
             <?php endforeach; ?>
@@ -112,16 +119,16 @@ $data = [
 </section>
 
 <!-- Línea de tiempo -->
-<section id="cuenca-del-sol-timeline" class="relative bg-white/10 text-black py-16">
+<section id="cuenca-del-sol-timeline" class="relative bg-f4f4f4 text-black py-16">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8">ETAPAS</h2>
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-3 gap-6"> <!-- Cambié a 3 columnas -->
             <?php foreach ($data['timeline']['steps'] as $step): ?>
-                <div class="p-6 rounded-lg shadow text-center <?= $step['done'] ? 'border-l-4 border-green-500' : '' ?>">
+                <div class="p-6 rounded-lg shadow text-center bg-white <?= $step['done'] ? 'border-l-4 border-green-500' : 'border-l-4 border-gray-300' ?>">
                     <h3 class="font-bold"><?= $step['title'] ?></h3>
                     <p class="text-sm mb-2"><?= $step['desc'] ?></p>
                     <span class="inline-block px-3 py-1 text-sm rounded-full <?= $step['done'] ? 'bg-green-500 text-white' : 'bg-gray-300 text-black' ?>">
-                        <?= $step['done'] ? 'Completado' : 'Pendiente' ?>
+                        <?= $step['status'] ?? ($step['done'] ? 'Completado' : 'Pendiente') ?>
                     </span>
                 </div>
             <?php endforeach; ?>
@@ -130,7 +137,7 @@ $data = [
 </section>
 
 <!-- Financiamiento -->
-<section id="cuenca-del-sol-financing" class="relative bg-gray-100 py-16 text-center">
+<section id="cuenca-del-sol-financing" class="relative bg-white py-16 text-center">
     <div class="container mx-auto px-4 max-w-lg">
         <h2 class="text-3xl font-bold mb-6"><?= $data['financing']['headline'] ?></h2>
         <ul class="list-disc list-inside text-left">

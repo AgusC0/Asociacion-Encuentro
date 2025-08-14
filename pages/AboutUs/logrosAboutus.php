@@ -19,9 +19,9 @@
         ],
         [
           "icon" => "home",
-          "number" => "1",
-          "label" => "Proyectos completados",
-          "description" => "Desarrollos exitosos entregados",
+          "number" => "430",
+          "label" => "Lotes entregados  ",
+          "description" => "Lotes entregados exitosamente",
         ],
         [
           "icon" => "users",

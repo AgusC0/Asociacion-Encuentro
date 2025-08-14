@@ -15,6 +15,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -133,6 +135,19 @@
         initDropdown('dropdown');
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 5000, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        effect: "fade",
+        fadeEffect: { crossFade: true },
+      });
+    </script>
+
+    <script src="js/header.js"></script>
 
   </body>
 </html>

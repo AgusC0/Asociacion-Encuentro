@@ -1,15 +1,30 @@
 <section id="inicio" class="relative min-h-screen flex items-center">
-  <!-- Background Image -->
-  <div class="absolute inset-0 z-0">
-    <img
-      src="images/hero-desktop.jpg"
-      alt="aaa"
-      class="object-cover w-full h-full"
-      loading="eager"
-      style="position:absolute; inset:0; width:100%; height:100%;"
-    />
-    <div class="absolute inset-0 bg-black/40"></div>
+  <!-- Background Slider -->
+  <div class="swiper mySwiper absolute inset-0 z-0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/slide/1.jpg" alt="aaa" class="object-cover w-full h-full" loading="eager" style="position:absolute; inset:0; width:100%; height:100%;" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slide/CAR_6240.jpg" alt="Imagen 2" class="object-cover w-full h-full" style="position:absolute; inset:0; width:100%; height:100%;" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slide/3.jpg" alt="Imagen 3" class="object-cover w-full h-full" style="position:absolute; inset:0; width:100%; height:100%;" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slide/_NAT6780.jpg" alt="Imagen 4" class="object-cover w-full h-full" style="position:absolute; inset:0; width:100%; height:100%;" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slide/2.jpg" alt="Imagen 5" class="object-cover w-full h-full" style="position:absolute; inset:0; width:100%; height:100%;" />
+      </div>
+    </div>
+
+    <!-- Paginación y Navegación -->
+    <div class="swiper-pagination"></div>
   </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 "></div>
 
   <!-- Content -->
   <div class="relative z-10 container mx-auto px-4">

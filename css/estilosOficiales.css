@@ -179,3 +179,17 @@ iframe {
 .font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+
+
+
+#mobile-menu > div {
+  z-index: 1001; 
+  position: fixed; /* mantiene el panel deslizable desde la derecha */
+  top: 0;
+  right: 0;
+  width: 24rem; 
+  max-height: 100vh; /* nunca excede la altura de la ventana */
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  overflow-y: auto; /* si el contenido es más grande, aparece scroll */
+}
