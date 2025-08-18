@@ -22,7 +22,7 @@
           </ul>
         </div>
         <a href="/Asociacion-Encuentro/Lotes-comerciales" class="block px-4 py-2 hover:bg-gray-100">Lotes comerciales</a>
-        <a href="/Asociacion-Encuentro/programa-de-beneficios" class="transition-colors">Beneficios</a>
+        <a href="/Asociacion-Encuentro/beneficios" class="transition-colors">Beneficios</a>
         <a href="/Asociacion-Encuentro/sobre-nosotros" class="transition-colors">Nosotros</a>
         <a href="/Asociacion-Encuentro/#noticias" class="transition-colors">Noticias</a>
         <a href="/Asociacion-Encuentro/#contacto" class="transition-colors">Contacto</a>
@@ -58,7 +58,7 @@
           </ul>
         </div>
         <a href="/Asociacion-Encuentro/Lotes-comerciales" class="block hover:text-green-600">Lotes comerciales</a>
-        <a href="/Asociacion-Encuentro/programa-de-beneficios" class="block hover:text-green-600">Beneficios</a>
+        <a href="/Asociacion-Encuentro/beneficios" class="block hover:text-green-600">Beneficios</a>
         <a href="/Asociacion-Encuentro/sobre-nosotros" class="block hover:text-green-600">Nosotros</a>
         <a href="/Asociacion-Encuentro/#noticias" class="block hover:text-green-600">Noticias</a>
         <a href="/Asociacion-Encuentro/#contacto" class="block hover:text-green-600">Contacto</a>

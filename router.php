@@ -58,6 +58,11 @@ switch ($route) {
     case 'noticias':
         include "pages/Noticias/noticias.php";
         break;
+
+    case "beneficios":
+        include "pages/Beneficios/beneficios.php";
+        break;
+        
     default:
         include 'pages/404.php';
         break;

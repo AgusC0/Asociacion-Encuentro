@@ -180,3 +180,73 @@ iframe {
   font-family: 'Raleway', sans-serif;
 }
 
+
+
+/* Estilos de la sección Programa de Beneficios */
+.beneficios-texto {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 4% 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgba(13, 133, 72, 1);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-discount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn-comercio {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #0d8548;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-comercio:hover {
+    background-color: #0d9450;
+}
