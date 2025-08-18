@@ -9,18 +9,20 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center space-x-8 font-medium">
-        <a href="/Asociacion-Encuentro/" class="hover: transition-colors">Inicio</a>
-        <div class="relative group" id="dropdown">
-          <button class="flex items-center gap-1 transition-colors cursor-pointer">
+        <a href="/Asociacion-Encuentro/" class="hover:transition-colors">Inicio</a>
+
+        <div class="relative" id="dropdown">
+          <button id="dropdownButton" class="flex items-center gap-1 transition-colors cursor-pointer">
             Proyectos <i class="fas fa-angle-down"></i>
           </button>
-          <ul class="absolute left-0 mt-2 bg-white rounded-lg shadow-lg w-56 py-2 hidden group-hover:block">
+          <ul id="dropdownMenu" class="absolute left-0 bg-white rounded-lg shadow-lg w-56 py-2 hidden">
             <li><a href="/Asociacion-Encuentro/Los-Ceibos" class="block px-4 py-2 hover:bg-gray-100">Los Ceibos</a></li>
             <li><a href="/Asociacion-Encuentro/Cuenca-del-Sol" class="block px-4 py-2 hover:bg-gray-100">Cuenca del Sol</a></li>
             <li><a href="/Asociacion-Encuentro/Padre-Mugica" class="block px-4 py-2 hover:bg-gray-100">Padre Mugica</a></li>
             <li><a href="/Asociacion-Encuentro/Puerto-Sauce" class="block px-4 py-2 hover:bg-gray-100">Puerto Sauce</a></li>
           </ul>
         </div>
+
         <a href="/Asociacion-Encuentro/Lotes-comerciales" class="block px-4 py-2 hover:bg-gray-100">Lotes comerciales</a>
         <a href="/Asociacion-Encuentro/beneficios" class="transition-colors">Beneficios</a>
         <a href="/Asociacion-Encuentro/sobre-nosotros" class="transition-colors">Nosotros</a>

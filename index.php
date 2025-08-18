@@ -130,12 +130,9 @@
     <script src="js/WPbutton.js" defer></script>
 
     <!-- dropdown -->
-    <script src="path/to/dropdown.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        initDropdown('dropdown');
-      });
-    </script>
+    <script src="js/dropdown.js" defer></script>
+
+    <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {

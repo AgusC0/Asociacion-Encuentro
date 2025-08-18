@@ -99,19 +99,14 @@ iframe {
 
 #dropdownMenu {
   position: absolute;
-  top: calc(100% - 6px);
+  top: 100%; /* justo debajo del botón */
   left: 0;
   background: var(--color-blanco);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   width: 14rem;
   padding: 0.5rem 0;
-  display: none;
   z-index: 9999;
-}
-
-#dropdown:hover #dropdownMenu {
-  display: block;
 }
 
 #dropdownMenu li a {
