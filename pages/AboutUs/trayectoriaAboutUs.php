@@ -8,8 +8,8 @@
     </div>
 
     <div class="relative">
-      <!-- Línea central vertical centrada -->
-      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-green-600 to-blue-600"></div>
+      <!-- Línea central SOLO en desktop -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-green-600 to-blue-600 hidden md:block"></div>
 
       <?php
       $milestones = [
@@ -38,10 +38,12 @@
       ?>
         <div class="relative flex flex-col md:flex-row mb-16 <?= $isLeft ? "md:justify-start" : "md:justify-end" ?>">
           <!-- Punto central -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-green-600 to-blue-600 rounded-full border-4 border-white shadow-lg z-20"></div>
+          <div class="absolute left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-br from-green-600 to-blue-600 rounded-full border-4 border-white shadow-lg z-20"></div>
 
           <!-- Contenedor texto -->
-          <div class="bg-white border rounded-lg shadow-lg p-6 max-w-[calc(50%-2rem)] <?= $isLeft ? "md:mr-auto md:text-left" : "md:ml-auto md:text-right" ?>">
+          <div class="bg-white border rounded-lg shadow-lg p-6 
+                      w-full md:max-w-[calc(50%-2rem)] 
+                      <?= $isLeft ? "md:mr-auto md:text-left" : "md:ml-auto md:text-right" ?>">
             <div class="flex items-center space-x-3 mb-4 <?= $isLeft ? "" : "flex-row-reverse space-x-reverse" ?>">
               <div class="w-10 h-10 bg-gradient-to-br from-green-600 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                 <?= htmlspecialchars($m["year"]) ?>
@@ -57,7 +59,7 @@
     <!-- Proyectos -->
     <div class="mt-16 max-w-6xl mx-auto">
       <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Proyectos Destacados</h3>
-      <div class="flex flex-wrap gap-6  justify-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <?php
         $projects = [
           [
@@ -92,7 +94,7 @@
           ],
         ];
         foreach ($projects as $proj) : ?>
-          <div class="flex flex-col border rounded-lg shadow-lg p-6 px-4 hover:shadow-xl transition-shadow basis-[30%] min-w-[300px]">
+          <div class="flex flex-col border rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
             <h4 class="text-2xl font-bold text-green-700 mb-4"><?= htmlspecialchars($proj["name"]) ?></h4>
             <p class="mb-4 text-gray-700"><?= htmlspecialchars($proj["description"]) ?></p>
             <?php if (!empty($proj["details"])) : ?>
