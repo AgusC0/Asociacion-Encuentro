@@ -8,6 +8,10 @@
   --color-complementario: #0B6E3B;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Background y texto */
 .bg-principal { background-color: var(--color-principal) !important; }
 .text-principal { color: var(--color-principal) !important; }
@@ -94,12 +98,11 @@ iframe {
 /* Dropdown */
 #dropdown {
   position: relative;
-  cursor: pointer;
 }
 
 #dropdownMenu {
   position: absolute;
-  top: 100%; /* justo debajo del botón */
+  top: 100%;
   left: 0;
   background: var(--color-blanco);
   border-radius: 8px;
@@ -107,6 +110,14 @@ iframe {
   width: 14rem;
   padding: 0.5rem 0;
   z-index: 9999;
+
+  /* ocultamos por defecto */
+  display: none;
+}
+
+/* Mostramos el menu al hacer hover en el contenedor */
+#dropdown:hover #dropdownMenu {
+  display: block;
 }
 
 #dropdownMenu li a {
@@ -119,6 +130,7 @@ iframe {
 #dropdownMenu li a:hover {
   background-color: #f0f0f0;
 }
+
 
 /* Botones personalizados */
 

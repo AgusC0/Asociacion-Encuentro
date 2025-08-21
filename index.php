@@ -77,6 +77,12 @@
       Contactar por WhatsApp
     </div>
 
+    <!-- components/scrollTop.php -->
+    <a href="#inicio" id="scroll-top-button"
+      class="fixed bottom-1 left-3 text-green-500 z-50 hover:text-green-600 transition-transform hover:scale-110 text-[60px] hidden">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>  
+
     <!-- footer -->
     <?php include 'components/footer.php'; ?>
 
@@ -143,6 +149,27 @@
         effect: "fade",
         fadeEffect: { crossFade: true },
       });
+    </script>
+
+    <script>
+    (function() {
+      const btn = document.getElementById('scroll-top-button');
+
+      // Aparece solo cuando haces scroll
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          btn.classList.remove('hidden');
+        } else {
+          btn.classList.add('hidden');
+        }
+      });
+
+      // Scroll suave al hacer clic
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
     </script>
 
     <script src="js/header.js"></script>

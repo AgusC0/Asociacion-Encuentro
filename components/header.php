@@ -14,13 +14,13 @@
     <div class="flex items-center justify-between h-10 relative">
 
       <!-- Logo -->
-      <a href="/Asociacion-Encuentro/" class="flex items-center space-x-3">
+      <a href="/Asociacion-Encuentro/#inicio" class="flex items-center space-x-3">
         <img src="img/logos/logo-sin_asoc_civil.png" alt="Logo" class="h-16 w-auto -translate-y-4">
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center space-x-10 font-medium">
-        <a href="/Asociacion-Encuentro/" class="hover:text-green-600 transition-colors">Inicio</a>
+        <a href="/Asociacion-Encuentro/#inicio" class="hover:text-green-600 transition-colors">Inicio</a>
         <div class="relative" id="dropdown">
           <button id="dropdownButton" class="flex items-center gap-1 transition-colors cursor-pointer hover:text-green-600">
             Proyectos <i class="fas fa-angle-down"></i>
@@ -34,8 +34,8 @@
         </div>
         <a href="/Asociacion-Encuentro/Lotes-comerciales" class="hover:text-green-600 transition-colors">Lotes comerciales</a>
         <a href="/Asociacion-Encuentro/beneficios" class="hover:text-green-600 transition-colors">Beneficios</a>
-        <a href="/Asociacion-Encuentro/sobre-nosotros" class="hover:text-green-600 transition-colors">Nosotros</a>
         <a href="/Asociacion-Encuentro/#noticias" class="hover:text-green-600 transition-colors">Noticias</a>
+        <a href="/Asociacion-Encuentro/sobre-nosotros" class="hover:text-green-600 transition-colors">Nosotros</a>
         <a href="/Asociacion-Encuentro/#contacto" class="hover:text-green-600 transition-colors">Contacto</a>
       </nav>
 
@@ -69,8 +69,8 @@
         </div>
         <a href="/Asociacion-Encuentro/Lotes-comerciales" class="block hover:text-green-600">Lotes comerciales</a>
         <a href="/Asociacion-Encuentro/beneficios" class="block hover:text-green-600">Beneficios</a>
-        <a href="/Asociacion-Encuentro/sobre-nosotros" class="block hover:text-green-600">Nosotros</a>
         <a href="/Asociacion-Encuentro/#noticias" class="block hover:text-green-600">Noticias</a>
+        <a href="/Asociacion-Encuentro/sobre-nosotros" class="block hover:text-green-600">Nosotros</a>
         <a href="/Asociacion-Encuentro/#contacto" class="block hover:text-green-600">Contacto</a>
       </nav>
 

@@ -26,7 +26,4 @@ mobileMenu.addEventListener('click', (e) => {
 });
 
 
-// Toggle submenu "Proyectos"
-toggleProyectos.addEventListener('click', () => {
-  submenuProyectos.classList.toggle('hidden');
-});
+
