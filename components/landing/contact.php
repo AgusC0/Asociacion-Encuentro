@@ -100,13 +100,12 @@
         </form>
 
         <!-- Contenedor Flex para Información y Horarios lado a lado -->
-        <div class="flex gap-8">
+        <div class="flex flex-col lg:flex-row gap-8 w-full">
           <!-- Información de Contacto -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex-1 space-y-6 ">
+          <div class="bg-white rounded-lg shadow-lg p-6 flex-1 w-full space-y-6">
             <h3 class="text-2xl font-bold text-gray-900">Información de Contacto</h3>
 
-            <div class="flex items-center space-x-3"> 
-              <!-- Icono Ubicación -->
+            <div class="flex items-center space-x-3">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 12.414a2 2 0 00-2.828 0l-4.243 4.243"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a4 4 0 11-8 0 4 4 0 018 0z"/>
@@ -118,7 +117,6 @@
             </div>
 
             <div class="flex items-center space-x-3">
-              <!-- Icono Asesoramiento (Teléfono) -->
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h1l2-3h8l2 3h1v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 10v4M17 10v4M7 14h10" />
@@ -130,7 +128,6 @@
             </div>
 
             <div class="flex items-center space-x-3">
-              <!-- Icono Email -->
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M16 12l-4-4m0 0l-4 4m4-4v12" />
               </svg>
@@ -148,11 +145,10 @@
           </div>
 
           <!-- Horarios de Atención -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex-1 space-y-4">
+          <div class="bg-white rounded-lg shadow-lg p-6 flex-1 w-full space-y-4">
             <h3 class="text-2xl font-bold text-gray-900">Horarios de Atención</h3>
 
             <div class="flex items-center space-x-3">
-              <!-- Icono reloj -->
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
@@ -164,7 +160,6 @@
             </div>
 
             <div class="flex items-center space-x-3">
-              <!-- Icono reloj -->
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
@@ -174,16 +169,16 @@
                 <p class="text-gray-600">9:00 - 13:00 hs</p>
               </div>
             </div>
+
             <!-- Botón WhatsApp separado abajo -->
             <div class="p-2 mt-8">
-            <a href="#" id="whatsapp-button" target="_blank" class="flex items-center justify-center space-x-2 w-full py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition">
+              <a href="#" id="whatsapp-button" target="_blank" class="flex items-center justify-center space-x-2 w-full py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition">
                 <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 <span>Contactar por WhatsApp</span>
-            </a>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
